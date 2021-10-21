@@ -1,0 +1,39 @@
+@for $i from 1 through 8 {
+    .titulo-#{$i} {
+        color: #dbd2e8;
+        font-size: 2em;
+        justify-content: center;
+    }
+}
+
+@for $a from 1 through 8 {
+    .titulo-#{$a} {
+        font-size: 2em
+    }
+}
+
+@for $b from 1 through 8 {
+    .titulo-#{$b} {
+        display: flex
+    }
+}
+
+@for $c from 1 through 8 {
+    .titulo-#{$c} {
+        justify-content: center
+    }
+}
+
+@each $d in 1em,
+2em {
+    .font-#{$d} {
+        font-size: $d;
+    }
+}
+
+@each $rrss,
+$red in $redes {
+    .red-#{$rrss} {
+        width: 50px;
+    }
+}

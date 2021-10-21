@@ -1,0 +1,363 @@
+                                        * {
+                                            margin: 0;
+                                            padding: 0;
+                                            box-sizing: border-box;
+                                        }
+                                        
+                                        .container-fluid {
+                                            height: $alto;
+                                            @if $colorfondouno==#040f16 {
+                                                background-color: $colorfondouno;
+                                            }
+                                            @else if $colorfondodos==#141204 {
+                                                background-color: #59a5d8;
+                                            }
+                                            font-size: 18px;
+                                            font-family: $letra;
+                                            height: 100%;
+                                        }
+                                        
+                                        header {
+                                            display: grid;
+                                            justify-content: center;
+                                            background-color: #0cbaba;
+                                            background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+                                            .logo {
+                                                display: flex;
+                                                justify-content: center;
+                                                .logoRon {
+                                                    width: 100px;
+                                                    display: grid;
+                                                    justify-self: center;
+                                                }
+                                                .ron {
+                                                    color: $colorletracinco;
+                                                    display: grid;
+                                                    justify-self: center;
+                                                    align-self: center;
+                                                }
+                                            }
+                                        }
+                                        
+                                        .logoRon:hover {
+                                            transform: rotateY(45deg);
+                                        }
+                                        
+                                        .navbar,
+                                        .nav-link {
+                                            display: flex;
+                                            justify-content: center;
+                                            width: 100%;
+                                        }
+                                        
+                                        .nav-item:hover {
+                                            background-color: grey;
+                                            transform: scale(1);
+                                        }
+                                        
+                                        footer {
+                                            background-color: #0cbaba;
+                                            background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+                                            display: flex;
+                                            align-self: flex-end;
+                                            width: 100vw;
+                                        }
+                                        
+                                        .sr-only {
+                                            color: gray;
+                                        }
+                                        
+                                        .tarjetas {
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            justify-content: space-around;
+                                            padding-right: 2px;
+                                        }
+                                        
+                                        .card {
+                                            display: flex;
+                                            flex-direction: row;
+                                            flex-wrap: wrap;
+                                            justify-items: space-around;
+                                        }
+                                        
+                                        .vinculoWhatsapp {
+                                            display: block;
+                                            color: #fff;
+                                            position: fixed;
+                                            right: 20px;
+                                            bottom: 20px;
+                                            border-radius: 50%;
+                                            line-height: 80px;
+                                            text-align: center;
+                                            z-index: 999;
+                                        }
+                                        
+                                        .vinculoWhatsapp:hover {
+                                            transform: scale(1.5);
+                                        }
+                                        
+                                        .container {
+                                            background-color: #003559;
+                                            display: grid;
+                                            justify-content: space-around;
+                                            padding-bottom: 4px;
+                                        }
+                                        
+                                        .container-uno {
+                                            background-color: #90AACB;
+                                            display: grid;
+                                            justify-content: space-around;
+                                            padding-bottom: 4px;
+                                        }
+                                        
+                                        .contenedorpresentacion,
+                                        .contenedorAliadosComerciales {
+                                            font-family: "Heebo", sans-serif;
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            justify-content: center;
+                                            background-color: #003559;
+                                            margin-bottom: 4px;
+                                        }
+                                        
+                                        .textoClub {
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+                                        
+                                        .titulo-1 {
+                                            font-size: 3em;
+                                        }
+                                        
+                                        #textoClub1 {
+                                            font-family: "Heebo", sans-serif;
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            text-align: center;
+                                            font-size: 1em;
+                                            padding: 0 20px 0 20px;
+                                            margin: 20px;
+                                            color: #c5f4cb;
+                                        }
+                                        
+                                        .cajitas {
+                                            width: 33.33333vw;
+                                            height: 40%;
+                                            display: flex;
+                                            flex-direction: row;
+                                            flex-wrap: wrap;
+                                            justify-content: center;
+                                            padding: 2px;
+                                        }
+                                        
+                                        .caja {
+                                            width: 100%/3;
+                                            background-color: #035397;
+                                            display: flex;
+                                            justify-content: center;
+                                            margin-bottom: 4px;
+                                        }
+                                        
+                                        .caja .caja_foto {
+                                            width: 250px;
+                                            height: 300px;
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+                                        
+                                        .cajas {
+                                            display: flex;
+                                            flex-direction: row;
+                                            flex-wrap: wrap;
+                                            justify-content: center;
+                                            background-color: #B5EAEA;
+                                            margin-bottom: 4px;
+                                            padding: 4px;
+                                        }
+                                        
+                                        .cajas .cajas_foto {
+                                            width: 200px;
+                                        }
+                                        
+                                        .cajas .cajas_titulo {
+                                            font-family: "Heebo", sans-serif;
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            justify-content: center;
+                                            font-weight: bold;
+                                            font-size: 3em;
+                                            font-size: 3em;
+                                        }
+                                        
+                                        .titulouno_caja {
+                                            font-family: "Heebo", sans-serif;
+                                            display: -webkit-box;
+                                            display: -ms-flexbox;
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            justify-content: center;
+                                            font-weight: bold;
+                                            font-size: 3em;
+                                            font-size: 1.5em;
+                                            color: #8AC4D0;
+                                        }
+                                        
+                                        #textoClub1_caja {
+                                            font-family: "Heebo", sans-serif;
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            text-align: center;
+                                            font-size: 1em;
+                                            padding: 0 20px 0 20px;
+                                            margin: 20px;
+                                            color: white;
+                                        }
+                                        
+                                        .carousel-inner {
+                                            width: 200px;
+                                        }
+                                        
+                                        #titulodos {
+                                            font-family: "Heebo", sans-serif;
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            justify-content: center;
+                                            font-weight: bold;
+                                            font-size: 3em;
+                                            font-size: 1.5em;
+                                            align-content: center;
+                                            color: #dbd2e8;
+                                        }
+                                        
+                                        .contenedorTablaIngredientesRon {
+                                            display: flex;
+                                            flex-direction: row;
+                                            flex-wrap: wrap;
+                                            justify-content: center;
+                                            color: #c5f4cb;
+                                        }
+                                        
+                                        .encabezadoTabla {
+                                            color: #c5f4cb;
+                                        }
+                                        
+                                        .cuerpoTabla {
+                                            color: #c5f4cb;
+                                        }
+                                        
+                                        .contenedorVideos {
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            justify-content: center;
+                                        }
+                                        
+                                        .card {
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+                                        
+                                        .contenedorMenu_footer {
+                                            font-family: "Heebo", sans-serif;
+                                            color: white;
+                                            display: flex;
+                                            justify-content: center;
+                                            justify-items: center;
+                                            justify-self: center;
+                                            flex-flow: row wrap;
+                                            align-content: flex-end;
+                                            color: white;
+                                        }
+                                        
+                                        #redesSociales {
+                                            display: inline-flex;
+                                            padding: 6px;
+                                        }
+                                        
+                                        .contenedorclub {
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            justify-content: center;
+                                            background-color: #90AACB;
+                                            margin-bottom: 4px;
+                                        }
+                                        
+                                        .contenedorclub .contenedorclub_foto {
+                                            width: 200px;
+                                        }
+                                        
+                                        .titulo-5 {
+                                            display: flex;
+                                            justify-content: center;
+                                            flex-direction: row;
+                                        }
+                                        
+                                        .tituloClub {
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+                                        
+                                        .formularioRon {
+                                            display: flex;
+                                            justify-content: center;
+                                            background-color: #59a5d8;
+                                            padding: 4px;
+                                        }
+                                        
+                                        .fotoBeneficio {
+                                            width: 200px;
+                                        }
+                                        
+                                        @media (max-width: 768px) {
+                                            body {
+                                                font-size: 20px;
+                                                background-color: $colorfondotres;
+                                                color: $colorletracinco;
+                                                display: grid;
+                                                width: 100vw;
+                                                height: 100vh;
+                                            }
+                                            .tarjetas {
+                                                color: black;
+                                            }
+                                            #accordionExample {
+                                                color: $colorletratres;
+                                            }
+                                            #headingFour {
+                                                color: $colorletratres;
+                                            }
+                                            footer {
+                                                font-size: 15px;
+                                                display: flex;
+                                                width: 100vw;
+                                                height: 10vh;
+                                                align-content: flex-end;
+                                            }
+                                        }
+                                        
+                                        @media (max-width: 576px) {
+                                            body {
+                                                font-size: 15px;
+                                                background-color: $colorfondocuatro;
+                                                color: $colorletraseis;
+                                                width: 100vw;
+                                                height: auto;
+                                                display: grid;
+                                            }
+                                            .tarjetas {
+                                                color: black;
+                                            }
+                                            #accordionExample {
+                                                color: $colorletratres;
+                                            }
+                                            .card-body {
+                                                color: $colorletratres;
+                                            }
+                                            footer {
+                                                font-size: 10px;
+                                                width: 100vw;
+                                                height: auto;
+                                                display: flex;
+                                                align-content: flex-end;
+                                            }
+                                        }
